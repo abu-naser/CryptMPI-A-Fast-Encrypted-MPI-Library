@@ -22,7 +22,7 @@ export LD_LIBRARY_PATH=/HOME_DIR/automake/lib:$LD_LIBRARY_PATH
 
 #### CryptMPI-MVAPICH installation (Infiniband)
 Steps:
-
+1. 
 ```bash
 tar -xvzf cryptMPI-mvapich2-2.3.2.tar.gz
 cd mvapich2-2.3.2
@@ -30,11 +30,12 @@ cd mvapich2-2.3.2
 ./configure --prefix=/MVAPICH_INSTALL_DIR/install  --with-boringssl-include="/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/include/ -fopenmp"
 
 ```
-In the *Makefile* add -L/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/build/crypto -lcrypto in *LIBS*
+
+2. In the *Makefile* add -L/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/build/crypto -lcrypto in *LIBS*
 
 (e.g. LIBS =-L/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/build/crypto -lcrypto -libmad -lrdmacm -libumad -libverbs -ldl -lrt -lm -lpthread)
 
-
+3. 
 ```bash
 export LD_LIBRARY_PATH=/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/build/crypto
 make clean
@@ -45,7 +46,7 @@ make install
 
 #### CryptMPI-MPICH installation (Ethernet)
 Steps:
-
+1. 
 ```bash
 tar -xvzf cryptMPI-mpich-3.2.1.tar.gz
 cd mpich-3.2.1
@@ -53,12 +54,13 @@ cd mpich-3.2.1
 ./configure --prefix=/MPICH_INSTALL_DIR/install  --with-boringssl-include="/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/include/ -fopenmp"
 
 ```
-In the *Makefile* add -L/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/build/crypto -lcrypto in *LIBS*
+2. In the *Makefile* add -L/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/build/crypto -lcrypto in *LIBS*
 
 (e.g. LIBS = -L/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/build/crypto -lcrypto -lpthread )
 
-And also add *-fopenmp* in *LDFLAGS* (e.g. LDFLAGS = -fopenmp)
+3. And also add *-fopenmp* in *LDFLAGS* (e.g. LDFLAGS = -fopenmp)
 
+4. 
 ```bash
 export LD_LIBRARY_PATH=/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/build/crypto
 make clean
