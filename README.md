@@ -11,7 +11,7 @@ To install cryptMPI for the Infiniband and Ethernet network please follow follow
  automake version... >= 1.15
  libtool version... >= 2.4.4
 
-To get the above package you could use get-lib.sh
+To install the above package you could use get-lib.sh
 
 After installing, set the path for the above packages.
 
@@ -30,7 +30,7 @@ cd mvapich2-2.3.2
 ./configure --prefix=/MVAPICH_INSTALL_DIR/install  --with-boringssl-include="/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/include/ -fopenmp"
 
 ```
-In the *MAKEFILE* add -L/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/build/crypto -lcrypto in *LIBS*
+In the *Makefile* add -L/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/build/crypto -lcrypto in *LIBS*
 
 (e.g. LIBS =-L/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/build/crypto -lcrypto -libmad -lrdmacm -libumad -libverbs -ldl -lrt -lm -lpthread)
 
@@ -53,7 +53,7 @@ cd mpich-3.2.1
 ./configure --prefix=/MPICH_INSTALL_DIR/install  --with-boringssl-include="/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/include/ -fopenmp"
 
 ```
-In the *MAKEFILE* add -L/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/build/crypto -lcrypto in *LIBS*
+In the *Makefile* add -L/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/build/crypto -lcrypto in *LIBS*
 
 (e.g. LIBS = -L/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/build/crypto -lcrypto -lpthread )
 
