@@ -85,6 +85,12 @@ export LD_LIBRARY_PATH=/MPICH_INSTALL_DIR/install/lib:/YOUR_PATH_TO_MPICH/mpich-
 ```
 
 
+## Performance measurement
+The performance was measured in 100Gb/s Infiniband and 10Gb/s Ethernet. Benchmark program used:
+- Ping-Pong program
+- OSU micro-benchmark 5.6.2
+- NAS parallel benchmarks 3.3.1 
+- 2D-Stencil
 
 
 ## License
