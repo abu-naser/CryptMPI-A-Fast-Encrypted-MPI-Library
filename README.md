@@ -22,6 +22,7 @@ export LD_LIBRARY_PATH=/HOME_DIR/automake/lib:$LD_LIBRARY_PATH
 
 #### CryptMPI-MVAPICH installation (Infiniband)
 Steps:
+
 1. 
 ```bash
 tar -xvzf cryptMPI-mvapich2-2.3.2.tar.gz
@@ -46,6 +47,7 @@ make install
 
 #### CryptMPI-MPICH installation (Ethernet)
 Steps:
+
 1. 
 ```bash
 tar -xvzf cryptMPI-mpich-3.2.1.tar.gz
