@@ -57,7 +57,7 @@ In the *MAKEFILE* add -L/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/build/c
 
 (e.g. LIBS = -L/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/build/crypto -lcrypto -lpthread )
 
-And also *-fopenmp* as LDFLAGS = -fopenmp
+And also add *-fopenmp* in *LDFLAGS* (e.g. LDFLAGS = -fopenmp)
 
 ```bash
 export LD_LIBRARY_PATH=/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/build/crypto
