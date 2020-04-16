@@ -6,7 +6,7 @@ GCM from the [BoringSSL library](https://boringssl.googlesource.com/boringssl/).
 
 ## Installation
 To install cryptMPI for the Infiniband and Ethernet network please follow following steps:
-### Package requirement
+#### Package requirement
  autoconf version... >= 2.67
  automake version... >= 1.15
  libtool version... >= 2.4.4
@@ -20,7 +20,7 @@ export PATH=/HOME_DIR/automake/bin:$PATH
 export LD_LIBRARY_PATH=/HOME_DIR/automake/lib:$LD_LIBRARY_PATH
 ```
 
-### CryptMPI-MVAPICH (Infiniband)
+#### CryptMPI-MVAPICH installation (Infiniband)
 Steps:
 
 ```bash
@@ -43,7 +43,7 @@ make install
 ```
 
 
-### CryptMPI-MPICH (Ethernet)
+#### CryptMPI-MPICH installation (Ethernet)
 Steps:
 
 ```bash
@@ -94,7 +94,6 @@ The performance was measured in 100Gb/s Infiniband and 10Gb/s Ethernet network. 
 
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
 
 
 
