@@ -69,7 +69,8 @@ export LD_LIBRARY_PATH=/MVAPICH_INSTALL_DIR/install/lib:/YOUR_PATH_TO_MVAPICH/mv
 export MV2_ENABLE_AFFINITY=1
 export MV2_CPU_BINDING_POLICY=hybrid
 export MV2_HYBRID_BINDING_POLICY=spread 
-/MVAPICH_INSTALL_DIR/install/mpiexec -n 64 -f host ./mpi_app
+/MVAPICH_INSTALL_DIR/install/mpiexec -n 2 -f host ./pingpong
+/MVAPICH_INSTALL_DIR/install/mpiexec -n 64 -f host ./stencil 8 8 128 128 2 1000 0
 ```
 
 ### CryptMPI-MPICH (Ethernet)
@@ -80,7 +81,7 @@ export LD_LIBRARY_PATH=/MPICH_INSTALL_DIR/install/lib:/YOUR_PATH_TO_MPICH/mpich-
 
 
 ## Performance measurement
-The performance was measured in 100Gb/s Infiniband and 10Gb/s Ethernet network. Benchmark program used:
+The performance was measured on 100Gb/s Infiniband and 10Gb/s Ethernet network. Benchmark program used:
 - Ping-Pong program
 - OSU micro-benchmark 5.6.2
 - NAS parallel benchmarks 3.3.1 
@@ -88,7 +89,7 @@ The performance was measured in 100Gb/s Infiniband and 10Gb/s Ethernet network. 
 
 
 ## License
-
+[GPL](https://choosealicense.com/licenses/gpl-3.0/)
 
 
 
