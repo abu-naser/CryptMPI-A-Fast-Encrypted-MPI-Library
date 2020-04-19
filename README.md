@@ -63,7 +63,7 @@ make install
 
 ## Usage
 To run MPI applications using CryptMPI please follow following steps:
-### CryptMPI-MVAPICH (Infiniband)
+#### CryptMPI-MVAPICH (Infiniband)
 ```bash
 export LD_LIBRARY_PATH=/MVAPICH_INSTALL_DIR/install/lib:/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/build/crypto
 export MV2_ENABLE_AFFINITY=1
@@ -73,7 +73,7 @@ export MV2_HYBRID_BINDING_POLICY=spread
 /MVAPICH_INSTALL_DIR/install/mpiexec -n 64 -f host ./stencil 8 8 128 128 2 1000 0
 ```
 
-### CryptMPI-MPICH (Ethernet)
+#### CryptMPI-MPICH (Ethernet)
 ```bash
 export LD_LIBRARY_PATH=/MPICH_INSTALL_DIR/install/lib:/YOUR_PATH_TO_MPICH/mpich-3.2.1/boringssl-master/build/crypto
 /MPICH_INSTALL_DIR/install/mpiexec -n 2 -f host ./pingpong
