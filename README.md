@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3758775.svg)](https://doi.org/10.5281/zenodo.3758775)
 # CryptMPI: A Fast Encrypted MPI Library
 CryptMPI provides secure inter-node communication in the HPC cluster and cloud environment.
 We implemented two prototypes in MPICH-3.2.1 (for Ethernet) and MVAPICH2-2.3.1 (for Infiniband), both using AES-
