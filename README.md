@@ -1,5 +1,5 @@
 # CryptMPI: A Fast Encrypted MPI Library
-CrytMPI provides secure inter-node communication.
+CrytMPI provides secure inter-node communication in the HPC cluster and cloud environment.
 We implemented two prototypes in MPICH-3.2.1 (for Ethernet) and MVAPICH2-2.3.1 (for Infiniband), both using AES-
 GCM from the [BoringSSL library](https://boringssl.googlesource.com/boringssl/).
 
@@ -89,8 +89,7 @@ The performance was measured on 100Gb/s Infiniband and 10Gb/s Ethernet network. 
 - 2D-Stencil
 
 
-## License
-[GPL](https://choosealicense.com/licenses/gpl-3.0/)
+
 
 
 
