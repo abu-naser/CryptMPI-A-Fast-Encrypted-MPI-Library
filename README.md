@@ -32,6 +32,7 @@ cd mvapich2-2.3.2
 In the *Makefile* add -L/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/build/crypto -lcrypto in *LIBS*
 
 (e.g. LIBS =-L/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/build/crypto -lcrypto -libmad -lrdmacm -libumad -libverbs -ldl -lrt -lm -lpthread)
+*Note: for Intel Omni Path interconnect configure with --with-device=ch3:psm*
 
 ```bash
 export LD_LIBRARY_PATH=/YOUR_PATH_TO_MVAPICH/mvapich2-2.3.2/boringssl-master/build/crypto
